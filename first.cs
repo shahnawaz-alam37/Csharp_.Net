@@ -12,6 +12,9 @@ namespace program{
             {
                 Console.WriteLine("exception caugth:{0}",e);
             }
+            finally{
+                Console.WriteLine("Result=0");
+            }
         }
     }
       class first{
