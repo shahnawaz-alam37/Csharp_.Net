@@ -1,12 +1,15 @@
 using System;
-public delegate void del_example(string mess);//declaring delegate
-class pro{
-    public static void Main(string[]args){
-        del_example del = new del_example(disp);//passing method name as parameter
-        del("hello world");//calling method with parameter
-    }
-    public static void disp(string mess){
-        Console.WriteLine(mess);
-        Console.ReadLine();
+namespace del_ex{
+    public delegate void adddel(int a,int b);
+    class example{
+        public void addnums(int a,int b){
+            Console.WriteLine(a+b);
+        }
+        public static void Main(string[]args){
+            example ob = new example();
+            adddel del = new adddel(ob.addnums);
+            del(5,5);
+            Console.ReadLine();      
+        }
     }
 }
