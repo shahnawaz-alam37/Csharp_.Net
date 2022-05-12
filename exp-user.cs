@@ -14,7 +14,7 @@ namespace err
         Console.WriteLine("Access granted - You are old enough!");
       }
     }
-   static void main(string[] args)
+   static void Main(string[] args)
     {
       demo ob= new demo();
       ob.checkAge(20);

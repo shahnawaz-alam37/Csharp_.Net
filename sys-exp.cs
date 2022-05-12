@@ -4,7 +4,7 @@ namespace err
 {
   class abc
   {
-    public static void main(string[] args)
+    public static void Main(string[] args)
     {
       try
       {
